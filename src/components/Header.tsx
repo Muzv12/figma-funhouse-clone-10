@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 export const Header: React.FC = () => {
@@ -18,7 +19,7 @@ export const Header: React.FC = () => {
                 className="aspect-[1] object-contain w-[25px]"
               />
             </div>
-            <span className="text-[19px] text-black font-normal text-center leading-none w-[118px] rounded-[9.178px]">
+            <span className="text-[18px] text-black font-normal text-center leading-none w-[118px] rounded-[9.178px]">
               Market place
             </span>
           </button>
@@ -31,7 +32,7 @@ export const Header: React.FC = () => {
                 className="aspect-[1.04] object-contain w-[26px]"
               />
             </div>
-            <span className="text-[19px] text-[rgba(28,28,28,1)] font-normal whitespace-nowrap text-center leading-none w-[71px] rounded-[9.178px]">
+            <span className="text-[18px] text-[rgba(28,28,28,1)] font-normal whitespace-nowrap text-center leading-none w-[71px] rounded-[9.178px]">
               Funding
             </span>
           </button>
@@ -44,7 +45,7 @@ export const Header: React.FC = () => {
                 className="aspect-[1] object-contain w-[25px]"
               />
             </div>
-            <span className="text-[19px] text-[rgba(28,28,28,1)] font-normal whitespace-nowrap text-center leading-none w-[115px] rounded-[9.178px]">
+            <span className="text-[18px] text-[rgba(28,28,28,1)] font-normal whitespace-nowrap text-center leading-none w-[115px] rounded-[9.178px]">
               Bookkeeping
             </span>
           </button>
@@ -57,7 +58,7 @@ export const Header: React.FC = () => {
                 className="aspect-[1] object-contain w-[25px]"
               />
             </div>
-            <span className="text-[19px] text-[rgba(28,28,28,1)] font-normal whitespace-nowrap text-center leading-none w-[100px] rounded-[9.178px]">
+            <span className="text-[18px] text-[rgba(28,28,28,1)] font-normal whitespace-nowrap text-center leading-none w-[100px] rounded-[9.178px]">
               Formations
             </span>
           </button>
@@ -70,7 +71,7 @@ export const Header: React.FC = () => {
                 className="aspect-[1] object-contain w-[25px]"
               />
             </div>
-            <span className="text-[19px] text-[rgba(28,28,28,1)] font-normal whitespace-nowrap text-center leading-none w-[84px] rounded-[9.178px]">
+            <span className="text-[18px] text-[rgba(28,28,28,1)] font-normal whitespace-nowrap text-center leading-none w-[84px] rounded-[9.178px]">
               Academy
             </span>
           </button>
