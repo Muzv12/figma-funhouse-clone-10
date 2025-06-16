@@ -1,26 +1,16 @@
-
 import React, { useState } from 'react';
-
 export const NavigationTabs: React.FC = () => {
   const [activeTab, setActiveTab] = useState('buying');
   const [activeSubTab, setActiveSubTab] = useState('listings');
-
-  return (
-    <div className="border-[color:var(--color-border)] bg-[#F5F8FF] w-full ml-2.5 pb-[34px] rounded-[12.388px] border-[1.032px] border-solid max-md:max-w-full">
+  return <div className="border-[color:var(--color-border)] bg-[#F5F8FF] w-full ml-2.5 pb-[34px] rounded-[12.388px] border-[1.032px] border-solid max-md:max-w-full">
       {/* Primary Navigation */}
       <div className="bg-[rgba(234,242,255,0)] z-10 flex w-[395px] max-w-full flex-col text-[18px] font-normal whitespace-nowrap text-center leading-none -mt-2 max-md:pr-5">
         <div className="items-center content-center flex-wrap bg-[rgba(255,255,255,0.00)] flex gap-[8.409px_var(--8,8.409px)] p-[16.817px] rounded-[18.499px]">
-          <button
-            onClick={() => setActiveTab('buying')}
-            className="items-center bg-[#B7D2FF] flex gap-[8.409px] pr-[var(--24,] pl-[var(--24,] py-[16.817px)] rounded-[18.499px] max-md:px-5 hover:bg-[#A5C7FF] transition-colors"
-          >
-            <span className="text-[18px] text-black font-normal text-center leading-none w-[61px] rounded-[9.25px]">Buying</span>
+          <button onClick={() => setActiveTab('buying')} className="items-center bg-[#B7D2FF] flex gap-[8.409px] pr-[var(--24,] pl-[var(--24,] py-[16.817px)] rounded-[18.499px] max-md:px-5 hover:bg-[#A5C7FF] transition-colors">
+            <span className="text-[18px] text-black font-normal text-center leading-none w-[61px] rounded-[9.25px] my-[6px] mx-[13px]">Buying</span>
           </button>
-          <button
-            onClick={() => setActiveTab('selling')}
-            className="items-center bg-[#B7D2FF] flex gap-[8.409px] pr-[var(--24,] pl-[var(--24,] py-[16.817px)] rounded-[18.499px] max-md:px-5 hover:bg-[#A5C7FF] transition-colors"
-          >
-            <span className="text-[18px] text-black font-normal text-center leading-none w-[60px] rounded-[9.25px]">Selling</span>
+          <button onClick={() => setActiveTab('selling')} className="items-center bg-[#B7D2FF] flex gap-[8.409px] pr-[var(--24,] pl-[var(--24,] rounded-[18.499px] hover:bg-[#A5C7FF] transition-colors py-[2px] mx-0 px-[16px]">
+            <span className="text-[18px] text-black font-normal text-center leading-none w-[60px] rounded-[9.25px] my-[6px]">Selling</span>
           </button>
         </div>
       </div>
@@ -31,39 +21,24 @@ export const NavigationTabs: React.FC = () => {
           <div className="flex items-stretch flex-wrap grow shrink basis-auto max-md:max-w-full">
             <div className="bg-[rgba(234,242,255,0)] flex gap-2.5 overflow-hidden grow shrink basis-auto">
               <div className="flex min-w-60 w-[1054px] flex-col items-stretch pb-[17px] max-md:max-w-full">
-                <div className="items-center content-center flex-wrap bg-[rgba(255,255,255,0.00)] flex w-full gap-[8.344px_var(--8,8.344px)] p-[16.687px] rounded-[18.356px] max-md:max-w-full">
-                  <button
-                    onClick={() => setActiveSubTab('listings')}
-                    className="items-center bg-[#B7D2FF] flex gap-[8.344px] whitespace-nowrap pr-[var(--24,] pl-[var(--24,] py-[16.687px)] rounded-[18.356px] max-md:px-5 hover:bg-[#A5C7FF] transition-colors"
-                  >
-                    <span className="text-[18px] text-black font-normal text-center leading-none w-[69px] rounded-[9.178px]">Listings</span>
+                <div className="items-center content-center flex-wrap bg-[rgba(255,255,255,0.00)] flex w-full gap-[8.344px_var(--8,8.344px)] p-[16.687px] rounded-[18.356px] max-md:max-w-full px-[138px] py-0 mx-0">
+                  <button onClick={() => setActiveSubTab('listings')} className="items-center bg-[#B7D2FF] flex gap-[8.344px] whitespace-nowrap pr-[var(--24,] pl-[var(--24,] py-[16.687px)] rounded-[18.356px] max-md:px-5 hover:bg-[#A5C7FF] transition-colors">
+                    <span className="text-[18px] text-black font-normal text-center leading-none w-[69px] rounded-[9.178px] my-[5px]">Listings</span>
                   </button>
                   
-                  <button
-                    onClick={() => setActiveSubTab('favorites')}
-                    className="items-center bg-[#B7D2FF] flex gap-[8.344px] pr-[var(--24,] pl-[var(--24,] py-[16.687px)] rounded-[18.356px] max-md:px-5 hover:bg-[#A5C7FF] transition-colors"
-                  >
+                  <button onClick={() => setActiveSubTab('favorites')} className="items-center bg-[#B7D2FF] flex gap-[8.344px] pr-[var(--24,] pl-[var(--24,] py-[16.687px)] rounded-[18.356px] max-md:px-5 hover:bg-[#A5C7FF] transition-colors">
                     <span className="text-[18px] text-black font-normal text-center leading-none w-[155px] rounded-[9.178px]">Favorite Matches</span>
                   </button>
                   
-                  <button
-                    onClick={() => setActiveSubTab('deals')}
-                    className="items-center bg-[#B7D2FF] flex gap-[8.344px] whitespace-nowrap pr-[var(--24,] pl-[var(--24,] py-[16.687px)] rounded-[18.356px] max-md:px-5 hover:bg-[#A5C7FF] transition-colors"
-                  >
+                  <button onClick={() => setActiveSubTab('deals')} className="items-center bg-[#B7D2FF] flex gap-[8.344px] whitespace-nowrap pr-[var(--24,] pl-[var(--24,] py-[16.687px)] rounded-[18.356px] max-md:px-5 hover:bg-[#A5C7FF] transition-colors">
                     <span className="text-[18px] text-black font-normal text-center leading-none w-[51px] rounded-[9.178px]">Deals</span>
                   </button>
                   
-                  <button
-                    onClick={() => setActiveSubTab('chats')}
-                    className="items-center bg-[#B7D2FF] flex gap-[8.344px] whitespace-nowrap pr-[var(--24,] pl-[var(--24,] py-[16.687px)] rounded-[18.356px] max-md:px-5 hover:bg-[#A5C7FF] transition-colors"
-                  >
+                  <button onClick={() => setActiveSubTab('chats')} className="items-center bg-[#B7D2FF] flex gap-[8.344px] whitespace-nowrap pr-[var(--24,] pl-[var(--24,] py-[16.687px)] rounded-[18.356px] max-md:px-5 hover:bg-[#A5C7FF] transition-colors">
                     <span className="text-[18px] text-black font-normal text-center leading-none w-[53px] rounded-[9.178px]">Chats</span>
                   </button>
                   
-                  <button
-                    onClick={() => setActiveSubTab('ai-builder')}
-                    className="items-center bg-[#B7D2FF] flex gap-[8.344px] pr-[var(--24,] pl-[var(--24,] py-[16.687px)] rounded-[18.356px] max-md:px-5 hover:bg-[#A5C7FF] transition-colors"
-                  >
+                  <button onClick={() => setActiveSubTab('ai-builder')} className="items-center bg-[#B7D2FF] flex gap-[8.344px] pr-[var(--24,] pl-[var(--24,] py-[16.687px)] rounded-[18.356px] max-md:px-5 hover:bg-[#A5C7FF] transition-colors">
                     <span className="text-[18px] text-black font-normal text-center leading-none w-[115px] rounded-[9.178px]">Ai Builder (p)</span>
                   </button>
                 </div>
@@ -98,6 +73,5 @@ export const NavigationTabs: React.FC = () => {
           Layout &gt;
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
